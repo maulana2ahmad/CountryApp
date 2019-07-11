@@ -22,7 +22,7 @@ public class RetrofitIntance {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return null;
+        return retrofit.create(GetCountryDataServices.class);
     }
 
 }
